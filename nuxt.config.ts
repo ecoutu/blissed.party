@@ -1,36 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify from 'vite-plugin-vuetify';
-export default defineNuxtConfig({
-  // css: ['~/assets/styles.css'], // vuetify ships precompiled css, no need to import sass
-  // build: {
-  //   transpile: ['vuetify'],
-  // },
 
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: true,
   },
-  // vite: {
-  //   server: {
-  //     hmr: {
-  //       protocol: 'ws',
-  //       host: '0.0.0.0',
-  //       path: '.',
-  //     },
-  //   },
-  // },
+  build: {
+    transpile: ['vuetify'],
+  },
   vite: {
     server: {
       hmr: {
         protocol: 'ws',
-        host: 'localhost',
       },
     },
-    // define: {
-    //   ssr: {
-    //     noExternal: ['vuetify'], // add the vuetify vite plugin
-    //   },
-    // },
   },
   modules: [
     async (options, nuxt) => {

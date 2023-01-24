@@ -4,8 +4,12 @@ export default { name: 'IndexPage' };
 </script>
 
 <template>
-  <div class="d-flex flex-column justify-start align-center h-auto">
-    <img class="w-100 h-50" src="/logo.jpg" />
-    <img class="w-100 h-50" src="/qrcode.jpg" />
-  </div>
+  <v-container fluid class="pa-0">
+    <v-row no-gutters>
+      <v-col class="flex-column" cols="12">
+        <v-img height="50%" src="/logo.jpg" />
+        <v-img height="50%" src="/qrcode.jpg" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
