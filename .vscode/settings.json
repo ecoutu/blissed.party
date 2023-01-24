@@ -1,6 +1,11 @@
 {
   "conventionalCommits.scopes": [
     "package",
-    "index"
+    "index",
+    "vuetify"
+  ],
+  "cSpell.words": [
+    "Nuxt",
+    "Vuetify"
   ]
 }
