@@ -4,7 +4,8 @@
     "index",
     "vuetify",
     "cspell",
-    "index"
+    "index",
+    "content"
   ],
   "cSpell.words": [
     "Nuxt",
